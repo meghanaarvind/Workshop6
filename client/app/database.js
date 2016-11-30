@@ -137,6 +137,7 @@ export function readDocument(collection, id) {
   return JSONClone(data[collection][id]);
 }
 
+module.exports.readDocument = readDocument;
 /**
  * Emulates writing a "document" to a NoSQL database.
  */
